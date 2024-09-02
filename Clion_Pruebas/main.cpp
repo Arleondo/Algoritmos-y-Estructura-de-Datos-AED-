@@ -48,8 +48,9 @@ class imprime {
 public:
     void operator()(T* ini, T* fin) {
         for (T* p = ini ; p <= fin; p++) {
-            cout << *p << endl;
+            cout << *p << "\t";
         }
+        cout << endl;
     }
 };
 
@@ -63,9 +64,10 @@ int main()
     Bubble<float,Desc<float> > X;
 
     imprime<int> p;
+    imprime<float> p1;
     p(A, A + 5);
     X(Y, Y + 5);
-    p(A, A + 5);
+    p1(Y, Y + 5);
 
     return 0;
 }
