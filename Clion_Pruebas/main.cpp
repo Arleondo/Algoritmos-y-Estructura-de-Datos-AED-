@@ -59,12 +59,12 @@ int main()
     int A[6] = { 6,5,4,3,2,1};
     Bubble<int, Asc<int> > b;
     b(A, A + 5);
-    int Y[6] = { 1,2,3,4,5,6 };
-    Bubble<int,Desc<int> > X;
-    
+    float Y[6] = { 1,2,3,4,5,6 };
+    Bubble<float,Desc<float> > X;
+
     imprime<int> p;
     p(A, A + 5);
-    X(A, A + 5);
+    X(Y, Y + 5);
     p(A, A + 5);
 
     return 0;
