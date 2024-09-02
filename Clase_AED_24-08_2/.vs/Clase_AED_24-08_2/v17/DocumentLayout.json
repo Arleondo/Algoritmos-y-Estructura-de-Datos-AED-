@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\AED(Ccomp_3)\\Clase_AED_24-08_2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8EC62FE7-4A57-4723-B97A-994B45FDD361}|Clase_AED_24-08_2\\Clase_AED_24-08_2.vcxproj|D:\\AED(Ccomp_3)\\Clase_AED_24-08_2\\Clase_AED_24-08_2\\Clase_AED_24-08_2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8EC62FE7-4A57-4723-B97A-994B45FDD361}|Clase_AED_24-08_2\\Clase_AED_24-08_2.vcxproj|solutionrelative:Clase_AED_24-08_2\\Clase_AED_24-08_2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Clase_AED_24-08_2.cpp",
+              "DocumentMoniker": "D:\\AED(Ccomp_3)\\Clase_AED_24-08_2\\Clase_AED_24-08_2\\Clase_AED_24-08_2.cpp",
+              "RelativeDocumentMoniker": "Clase_AED_24-08_2\\Clase_AED_24-08_2.cpp",
+              "ToolTip": "D:\\AED(Ccomp_3)\\Clase_AED_24-08_2\\Clase_AED_24-08_2\\Clase_AED_24-08_2.cpp",
+              "RelativeToolTip": "Clase_AED_24-08_2\\Clase_AED_24-08_2.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-24T08:54:30.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
