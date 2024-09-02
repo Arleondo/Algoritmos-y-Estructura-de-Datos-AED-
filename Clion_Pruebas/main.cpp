@@ -3,8 +3,8 @@
 // bubble (A,A+5,Asc())
 // bubble (A,A+5,desc())
 #pragma once
-
-#include <iostream>
+#define Ascen(a,b) (a>b)
+#include <iostream><
 using namespace std;
 
 template<class T,class O>
