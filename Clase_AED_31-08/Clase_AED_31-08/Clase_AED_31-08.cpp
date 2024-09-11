@@ -26,6 +26,7 @@ public:
 		}
 	}
 };
+
 template<class T>
 class Asc {
 public:

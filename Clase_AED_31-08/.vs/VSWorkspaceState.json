@@ -10,5 +10,11 @@
       "out\\build\\x86-release",
       "out\\install\\x86-release"
     ]
-  }
+  },
+  "ExpandedNodes": [
+    "",
+    "\\Clase_AED_31-08"
+  ],
+  "SelectedNode": "\\Clase_AED_31-08\\Clase_AED_31-08.cpp",
+  "PreviewInSolutionExplorer": false
 }

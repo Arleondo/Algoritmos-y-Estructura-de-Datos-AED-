@@ -1,0 +1,76 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "Clase_AED_03-09",
+					"jsonFile" : "directory-Clase_AED_03-09-Debug-879178a25723290d9739.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Clase_AED_03-09",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "Clase_AED_03-09",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "Clase_AED_03-09::@349f9d58e096399c1555",
+					"jsonFile" : "target-Clase_AED_03-09-Debug-a3634112724a9c165e18.json",
+					"name" : "Clase_AED_03-09",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Algoritmos y Estructura de Datos(AED)/Clase_AED_03-09/out/build/x64-debug",
+		"source" : "D:/Algoritmos y Estructura de Datos(AED)/Clase_AED_03-09"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

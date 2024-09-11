@@ -1,0 +1,12 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "type": "default",
+      "project": "CMakeLists.txt",
+      "projectTarget": "Clase_AED_10-09.exe (Clase_AED_10-09\\Clase_AED_10-09.exe)",
+      "name": "Clase_AED_10-09.exe (Clase_AED_10-09\\Clase_AED_10-09.exe)"
+    }
+  ]
+}
