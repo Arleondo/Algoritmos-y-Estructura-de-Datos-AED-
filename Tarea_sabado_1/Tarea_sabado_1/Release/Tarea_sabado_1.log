@@ -1,0 +1,2 @@
+﻿  Tarea_sabado_1.cpp
+D:\Algoritmos-y-Estructura-de-Datos-AED-\Tarea_sabado_1\Tarea_sabado_1\Tarea_sabado_1.cpp(52,9): error C2429: función de idioma 'init-statements en if/switch' requiere la marca de compilador '/std:c++17'
