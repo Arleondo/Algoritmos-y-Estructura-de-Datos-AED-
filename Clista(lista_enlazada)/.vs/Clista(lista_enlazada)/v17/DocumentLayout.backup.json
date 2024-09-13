@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Algoritmos-y-Estructura-de-Datos-AED-\\Clista(lista_enlazada)\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2914229E-78D1-407E-8F02-85E0AD1598D1}|Clista(lista_enlazada)\\Clista(lista_enlazada).vcxproj|D:\\Algoritmos-y-Estructura-de-Datos-AED-\\Clista(lista_enlazada)\\Clista(lista_enlazada)\\Clista(lista_enlazada).cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2914229E-78D1-407E-8F02-85E0AD1598D1}|Clista(lista_enlazada)\\Clista(lista_enlazada).vcxproj|solutionrelative:Clista(lista_enlazada)\\Clista(lista_enlazada).cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Clista(lista_enlazada).cpp",
+              "DocumentMoniker": "D:\\Algoritmos-y-Estructura-de-Datos-AED-\\Clista(lista_enlazada)\\Clista(lista_enlazada)\\Clista(lista_enlazada).cpp",
+              "RelativeDocumentMoniker": "Clista(lista_enlazada)\\Clista(lista_enlazada).cpp",
+              "ToolTip": "D:\\Algoritmos-y-Estructura-de-Datos-AED-\\Clista(lista_enlazada)\\Clista(lista_enlazada)\\Clista(lista_enlazada).cpp",
+              "RelativeToolTip": "Clista(lista_enlazada)\\Clista(lista_enlazada).cpp",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABsAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-13T03:22:13.056Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
