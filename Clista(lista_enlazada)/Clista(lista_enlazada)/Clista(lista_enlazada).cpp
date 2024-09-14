@@ -90,4 +90,6 @@ int main() {
     lista.pop_back();
     lista.pop_front();
     lista.print();
+
+    cout << lista[1];
 }
