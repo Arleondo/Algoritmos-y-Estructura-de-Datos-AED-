@@ -35,12 +35,19 @@ void LE<T, U>::print() {
 template<class T, class U>
 bool LE<T, U>::find(T v, nodo<T>*& pos) {
     pos = head;
-    for (nodo<T>* p = pos; p; p = p->next) {
-        if (op(v, p->valor) || v == pos->valor) {
-            return true;
+    for (nodo<T>* p = pos->next; p; p = p->next) {
+        if (p) {
+            if (op(v, p->valor) || v == p->valor) {
+                return true;
+            }
+            pos = p;
         }
-        pos = p;
     }
+    
+    if (v == pos->valor) {
+        return true;
+    }
+
     return false;
 }
 
@@ -49,21 +56,16 @@ void LE<T, U>::del(T v) {
 
     nodo<T>* it = nullptr;
     if (find(v, it)) {
-        if (it == head) {
-            head = it->next;
+        if (it->next->next) {
+            auto* it_2 = it->next;
+            it->next = it->next->next;
+            delete it_2;
+            return;
         }
-        else {
-            nodo<T>* it_2 = head;
-            while (it_2 && it_2->next != it) {
-                it_2 = it_2->next;
-            }
-            if (it_2) {
-                it_2->next = it->next;
-            }
-        }
-        delete it;
+        delete it->next;
+        it->next = nullptr;
+        return;
     }
-
 }
 
 template<class T, class U>
@@ -80,11 +82,10 @@ void LE<T, U>::add(T v) {
         AddNodo->next = head;
         head = AddNodo;
     }
+
     else {
-        nodo<T>* it = head;
-        while (it->next && op(it->next->valor, v)) {
-            it = it->next;
-        }
+        nodo<T>* it = nullptr;
+        find(v, it);
         AddNodo->next = it->next;
         it->next = AddNodo;
     }
@@ -108,14 +109,16 @@ public:
 };
 
 int main() {
-    LE <int, Asc<int>> Lista;
+    LE <int, Desc<int>> Lista;
 
     Lista.add(1);
     Lista.add(8);
     Lista.add(5);
     Lista.add(2);
     Lista.print();
-
+    Lista.del(1);
+    Lista.del(5);
+    Lista.print();
 
     LE <char, Asc<char>> Lista2;
 
@@ -123,6 +126,9 @@ int main() {
     Lista2.add('B');
     Lista2.add('A');
     Lista2.add('J');
+    Lista2.print();
+    Lista2.del('J');
+    Lista2.del('K');
     Lista2.print();
 
 }
