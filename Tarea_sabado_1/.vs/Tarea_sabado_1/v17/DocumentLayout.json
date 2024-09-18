@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Algoritmos y Estructura de Datos(AED)\\Tarea_sabado_1\\",
+  "WorkspaceRootPath": "D:\\Algoritmos-y-Estructura-de-Datos-AED-\\Tarea_sabado_1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B28C14F5-063E-4A98-B656-5E8E943E1402}|Tarea_sabado_1\\Tarea_sabado_1.vcxproj|D:\\Algoritmos y Estructura de Datos(AED)\\Tarea_sabado_1\\Tarea_sabado_1\\Tarea_sabado_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{B28C14F5-063E-4A98-B656-5E8E943E1402}|Tarea_sabado_1\\Tarea_sabado_1.vcxproj|D:\\Algoritmos-y-Estructura-de-Datos-AED-\\Tarea_sabado_1\\Tarea_sabado_1\\Tarea_sabado_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{B28C14F5-063E-4A98-B656-5E8E943E1402}|Tarea_sabado_1\\Tarea_sabado_1.vcxproj|solutionrelative:Tarea_sabado_1\\Tarea_sabado_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Tarea_sabado_1.cpp",
-              "DocumentMoniker": "D:\\Algoritmos y Estructura de Datos(AED)\\Tarea_sabado_1\\Tarea_sabado_1\\Tarea_sabado_1.cpp",
+              "DocumentMoniker": "D:\\Algoritmos-y-Estructura-de-Datos-AED-\\Tarea_sabado_1\\Tarea_sabado_1\\Tarea_sabado_1.cpp",
               "RelativeDocumentMoniker": "Tarea_sabado_1\\Tarea_sabado_1.cpp",
-              "ToolTip": "D:\\Algoritmos y Estructura de Datos(AED)\\Tarea_sabado_1\\Tarea_sabado_1\\Tarea_sabado_1.cpp",
+              "ToolTip": "D:\\Algoritmos-y-Estructura-de-Datos-AED-\\Tarea_sabado_1\\Tarea_sabado_1\\Tarea_sabado_1.cpp",
               "RelativeToolTip": "Tarea_sabado_1\\Tarea_sabado_1.cpp",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAAAF4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-12T01:43:06.392Z",
               "EditorCaption": ""
