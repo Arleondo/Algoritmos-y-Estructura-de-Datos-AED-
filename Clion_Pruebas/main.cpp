@@ -30,7 +30,7 @@ public:
 };
 
 void CDeque::Expandir_M() {
-    int old_TM = Tam_Mapa;
+    const int old_TM = Tam_Mapa;
     Tam_Mapa=(Tam_Mapa*2)+1;
     //Nuevo mapa inicilizado y Copiado del antiguo
     int ** New_Mapa = new int* [Tam_Mapa];
@@ -43,13 +43,18 @@ void CDeque::Expandir_M() {
 }
 
 void CDeque::Colapsar_M() {
-    int Tam_Expansion= ((Tam_Mapa-Tam_Mapa/2)/2);
+    int Tam_Expansion= (Tam_Mapa-Tam_Mapa/2)/2;
     Tam_Mapa=(Tam_Mapa-1)/2;
-    int ** Colapse_Mapa = new int* [Tam_Mapa];
-    int ** Temp_In = Colapse_Mapa;
-    for (int **Mapa_Copy = Mapa + Tam_Expansion ; Mapa_Copy<= ((Mapa+(Tam_Mapa*2)+1)-1) - Tam_Expansion ; Mapa_Copy++,Temp_In++) {
-
-    }
+    auto Colapse_Mapa = new int* [Tam_Mapa];
+    for (int **Mapa_Copy = Mapa + Tam_Expansion,** Temp_In = Colapse_Mapa ; Mapa_Copy<= (Mapa+(Tam_Mapa*2)) - Tam_Expansion ; Mapa_Copy++,Temp_In++)
+        {Temp_In=Mapa_Copy;}
+    int ** Temp_Mapa = Mapa;
+    Mapa = Colapse_Mapa; In_Mapa=Mapa; Fin_Mapa=Mapa+(Tam_Mapa-1);
+    while (!In_Mapa){In_Mapa++;}
+    while (!Fin_Mapa){Fin_Mapa--;}
+    In_Arr=*In_Mapa; Fin_Arr= *Fin_Mapa;
+    while (!In_Arr){In_Arr++;} while(!Fin_Arr){Fin_Arr--;}
+    delete Temp_Mapa;
 }
 
 void CDeque::Expandir_A(int**& Ptr_Mapa,int*& Ptr_Array) {
