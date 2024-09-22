@@ -57,10 +57,23 @@ void LE<T, U>::del(T v) {
 
     nodo<T>* it = nullptr;
     if (find(v, it)) {
+        
+        if (it->next->valor != v) { return; }
+
         if (it->next->next) {
+            if (it == head) {
+                head = it->next;
+                delete it;
+                return;
+            }
             auto* it_2 = it->next;
             it->next = it->next->next;
             delete it_2;
+            return;
+        }
+        if (it == head) {
+            head = it->next;
+            delete it;
             return;
         }
         delete it->next;
@@ -73,7 +86,7 @@ template<class T, class U>
 void LE<T, U>::add(T v) {
 
     auto* AddNodo = new nodo<T>(v);
-
+    
     if (head == nullptr) {
         head = AddNodo;
         return;
@@ -87,6 +100,7 @@ void LE<T, U>::add(T v) {
     else {
         nodo<T>* it = nullptr;
         find(v, it);
+        if (*it == v) { return; }
         AddNodo->next = it->next;
         it->next = AddNodo;
     }
@@ -100,7 +114,7 @@ public:
         return a < b;
     }
 };
-
+#pragma once
 template<class T>
 class Desc {
 public:
@@ -128,7 +142,7 @@ int main() {
     Lista2.add('A');
     Lista2.add('J');
     Lista2.print();
-    Lista2.del('J');
+    Lista2.del('A');
     Lista2.del('K');
     Lista2.print();
 

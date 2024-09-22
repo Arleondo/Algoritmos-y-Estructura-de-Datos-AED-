@@ -15,7 +15,7 @@ template <class T, class U>
 struct LE {
     U op;
     nodo<T>* head = nullptr;
-    nodo<T>* tail = nullptr;
+    T* tail = nullptr;
 
     void add(T v);
     void del(T v);
@@ -50,30 +50,29 @@ template<class T, class U>
 void LE<T, U>::del(T v) {
     nodo<T>* Nodo_actual = nullptr; T* Array_actual = nullptr;
     if (find(Nodo_actual, Array_actual, v)) {
-        if (*Array_actual != v) {return;}
+        T temp_valor=*(Array_actual++);
+        if (*Array_actual!= v){ return;}
 
-        if (Array_actual==Nodo_actual->Array && Nodo_actual->Array+1 == nullptr) {
-                auto*it=head;
-                for (;it->next==Nodo_actual;it=it->next) {}
-                it->next=nullptr;
-                delete[] Nodo_actual;
+        for (;Array_actual!=Array_actual; Array_actual++)
+        delete Array_actual;
+        swap(*Array_actual,*(Array_actual++));
+
+
+    }
+
+
+
+
+    if (find (Nodo_actual,Array_actual,*tail)){
+        if (Nodo_actual->next){
+            delete[] Nodo_actual->next;
+            Nodo_actual->next = nullptr;
         }
-        auto*temp=Array_actual;
-        ++Array_actual;
-        delete temp;
-        for (;Nodo_actual;Nodo_actual=Nodo_actual->next) {
-
-            if (Array_actual==Nodo_actual->Array && Nodo_actual->Array+1 == nullptr) {
-                auto*it=head;
-                for (;it->next==Nodo_actual;it=it->next) {}
-                it->next=nullptr;
-                delete[] Nodo_actual;
-            }
-
-            for (;Array_actual != Nodo_actual->Array+4 && Array_actual++ ;Array_actual++) {
-                swap(Array_actual,temp);
-            }
-        }
+    }
+    if (tail==head->Array){
+        tail= nullptr;
+        delete[] head;
+        head= nullptr;
     }
 }
 
@@ -83,7 +82,7 @@ void LE<T, U>::add(T v) {
     if (head==nullptr) {
         head = new nodo<T>;
         head->Array[0] = v;
-        tail = head;
+        tail = head->Array;
         return;
     }
 
@@ -91,28 +90,34 @@ void LE<T, U>::add(T v) {
     find (Nodo_actual, Array_actual, v);
 
     if (*Array_actual == v) {return;}
-
     T Temp_dato=*Array_actual;
+
+    if (tail==Array_actual){
+        if (tail==Nodo_actual->Array+4) {
+            Nodo_actual->next = new nodo<T>;
+            tail=Nodo_actual->next->Array;
+            *tail=*Array_actual;
+            *Array_actual=Temp_dato;
+            return;
+        }
+        *tail=v; tail++; *tail=Temp_dato;
+        return;
+    }
+
     *Array_actual = v;
 
-    for (;Nodo_actual;Nodo_actual = Nodo_actual->next,Nodo_actual = Nodo_actual->next) {
+    for (;Nodo_actual;Nodo_actual = Nodo_actual->next) {
 
-        if (Array_actual==Nodo_actual->Array+4) {
-            if (Nodo_actual->next==nullptr) {
-                Nodo_actual->next = new nodo<T>;
-                tail=Nodo_actual->next;
-                Array_actual = Nodo_actual->next->Array;
-                swap(Temp_dato, *Array_actual);
-
-                return;
-            }
-            Array_actual = Nodo_actual->next->Array;
-            swap(*Array_actual,Temp_dato);
-            continue;
+        if (tail==Nodo_actual->Array+4) {
+            Nodo_actual->next = new nodo<T>;
+            tail=Nodo_actual->next->Array;
         }
 
         for (; Array_actual<Nodo_actual->Array+5  && Array_actual ;++Array_actual) {
             swap(Temp_dato, *Array_actual);
+            if (Array_actual==Nodo_actual->Array+4){
+                swap(Temp_dato,*(Nodo_actual->next->Array));
+            }
         }
     }
 
