@@ -1,4 +1,4 @@
-# Install script for directory: D:/AED(Ccomp_3)/Clion_file
+# Install script for directory: D:/Algoritmos y Estructura de Datos(AED)/Clion_file
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/AED(Ccomp_3)/Clion_file/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Algoritmos y Estructura de Datos(AED)/Clion_file/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

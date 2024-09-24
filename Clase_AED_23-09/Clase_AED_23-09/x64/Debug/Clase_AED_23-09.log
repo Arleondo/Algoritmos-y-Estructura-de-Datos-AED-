@@ -1,0 +1,4 @@
+﻿  Clase_AED_23-09.cpp
+D:\Algoritmos y Estructura de Datos(AED)\Clase_AED_23-09\Clase_AED_23-09\Clase_AED_23-09.cpp(34,1): warning C4715: 'LE::find': no todas las rutas de acceso de control devuelven un valor
+Clase_AED_23-09.obj : error LNK2019: símbolo externo "public: __cdecl LE::~LE(void)" (??1LE@@QEAA@XZ) sin resolver al que se hace referencia en la función main
+D:\Algoritmos y Estructura de Datos(AED)\Clase_AED_23-09\x64\Debug\Clase_AED_23-09.exe : fatal error LNK1120: 1 externos sin resolver
