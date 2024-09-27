@@ -2,6 +2,8 @@
 * Clist
 * Cdeque
 */
+#include <iostream>
+using namespace std;
 
 class CDeque{
     int Tam_Mapa;
@@ -46,10 +48,11 @@ void CDeque::Colapsar_M() {
     int Tam_Expansion= (Tam_Mapa-Tam_Mapa/2)/2;
     Tam_Mapa=(Tam_Mapa-1)/2;
     auto Colapse_Mapa = new int* [Tam_Mapa];
-    for (int **Mapa_Copy = Mapa + Tam_Expansion,** Temp_In = Colapse_Mapa ; Mapa_Copy<= (Mapa+(Tam_Mapa*2)) - Tam_Expansion ; Mapa_Copy++,Temp_In++)
-        {Temp_In=Mapa_Copy;}
+    int **Mapa_Copy = Mapa + Tam_Expansion;
+    for (int ** Temp_In = Colapse_Mapa ; Mapa_Copy<= (Mapa+(Tam_Mapa*2)) - Tam_Expansion && Mapa_Copy<=Fin_Mapa ; Mapa_Copy++,Temp_In++)
+        {*Temp_In=*Mapa_Copy;}
     int ** Temp_Mapa = Mapa;
-    Mapa = Colapse_Mapa; In_Mapa=Mapa; Fin_Mapa=Mapa+(Tam_Mapa-1);
+    Mapa = Colapse_Mapa; In_Mapa=Mapa; Fin_Mapa=Mapa_Copy;
     while (!In_Mapa){In_Mapa++;}
     while (!Fin_Mapa){Fin_Mapa--;}
     In_Arr=*In_Mapa; Fin_Arr= *Fin_Mapa;
@@ -81,7 +84,9 @@ void CDeque::push_front(const int valor) {
         *In_Arr=valor;
         Num_Elementos++;
     }
-    else if(In_Arr==*In_Mapa && In_Arr==*Mapa) {}
+    else if(In_Arr==*In_Mapa && In_Arr==*Mapa) {
+
+    }
 
 }
 
@@ -101,7 +106,6 @@ void CDeque::pop_back() {
 
 
 int &CDeque::operator[](int valor) {
-
 }
 
 void CDeque::print() {
@@ -109,5 +113,10 @@ void CDeque::print() {
 }
 
 int main() {
+    const int A[9]={1,2,3,4,5,6,7,8,9};
+    const int * ptr = A+3;
+    cout << (sizeof(A)+sizeof(ptr))/4 << endl;
+    cout << *ptr << endl;
+    cout << *(A+11) << endl;
     return 0;
 }
