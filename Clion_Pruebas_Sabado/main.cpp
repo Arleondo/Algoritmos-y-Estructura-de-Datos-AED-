@@ -26,9 +26,11 @@ template<class T, class U>
 void LE<T, U>::print() {
     cout << "Head" << "->";
     for (nodo<T>* it = head; it; it = it->next) {
+        cout << "[ ";
         for (T** it_2 = it->Array; it_2 != &it->Array[4] && it_2<=it->Fin ; ++it_2) {
-            cout << **it_2 << "->";
+            cout << **it_2 << " , ";
         }
+        cout << " ]->";
     }
     cout << "nullptr " << endl;
 }
@@ -37,11 +39,15 @@ template<class T, class U>
 bool LE<T, U>::find(nodo<T>*& Node_pos ,T**& Array_pos, T v) {
     Node_pos = head;
     for (;Node_pos<=tail && Node_pos ;Node_pos = Node_pos->next) {
-        for (Array_pos = Node_pos->Array; Array_pos<=Node_pos->Fin && Array_pos ; Array_pos++) {
+        for (Array_pos = Node_pos->Array; Array_pos<=Node_pos->Fin && !(op(v,**Array_pos)) ;Array_pos++) {
             if (op(v, **Array_pos) || **Array_pos == v) {
                 return true;
             }
+            if (Array_pos++){ continue;}
+            else{break;}
         }
+        if (Node_pos->next){ continue;}
+        else {return false;}
     }
     return false;
 }
@@ -99,8 +105,17 @@ void LE<T, U>::add(T v) {
 
     T* Temp_dato= *Array_actual;
     *Array_actual = Valor;
-    if (Array_actual < Nodo_actual->Fin || Nodo_actual->Fin!=Nodo_actual->Array+4) {
+    if (Array_actual>Nodo_actual->Fin){
+        Nodo_actual->Fin=Array_actual;
+        return;}
+
+    if (Array_actual < (Nodo_actual->Array)+4) {
         ++Array_actual;
+    } else if (Nodo_actual->next) {
+        Array_actual = Nodo_actual->next->Array; Nodo_actual=Nodo_actual->next;}
+    else {
+        Nodo_actual->next = new nodo<T>; tail= Nodo_actual->next;
+        Array_actual = Nodo_actual->next->Array;
     }
 
     for (;Nodo_actual<=tail && Nodo_actual ;Nodo_actual=Nodo_actual->next) {
@@ -145,25 +160,24 @@ public:
 };
 
 int main() {
-    LE <int, Desc<int>> Lista;
+    LE <int, Asc<int>> Lista;
 
+    Lista.print();
     Lista.add(1);
-    Lista.add(8);
-    Lista.add(5);
     Lista.add(2);
+    Lista.add(3);
+    Lista.add(4);
+    Lista.add(5);
     Lista.print();
-    Lista.del(1);
-    Lista.del(5);
+    Lista.add(6);
+    Lista.add(7);
+    Lista.add(8);
+    Lista.add(9);
+    Lista.print();
+    Lista.del(2);
+    Lista.del(4);
+    Lista.del(6);
+    Lista.del(8);
     Lista.print();
 
-    LE <char, Asc<char>> Lista2;
-
-    Lista2.add('K');
-    Lista2.add('B');
-    Lista2.add('A');
-    Lista2.add('J');
-    Lista2.print();
-    Lista2.del('J');
-    Lista2.del('K');
-    Lista2.print();
 }

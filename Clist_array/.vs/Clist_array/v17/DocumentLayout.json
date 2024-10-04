@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Algoritmos y Estructura de Datos(AED)\\Clist_array\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2ECD169D-5A29-4133-903E-4272291DF239}|Clist_array\\Clist_array.vcxproj|D:\\Algoritmos y Estructura de Datos(AED)\\Clist_array\\Clist_array\\Clist_array.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2ECD169D-5A29-4133-903E-4272291DF239}|Clist_array\\Clist_array.vcxproj|solutionrelative:Clist_array\\Clist_array.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Clist_array.cpp",
+              "DocumentMoniker": "D:\\Algoritmos y Estructura de Datos(AED)\\Clist_array\\Clist_array\\Clist_array.cpp",
+              "RelativeDocumentMoniker": "Clist_array\\Clist_array.cpp",
+              "ToolTip": "D:\\Algoritmos y Estructura de Datos(AED)\\Clist_array\\Clist_array\\Clist_array.cpp",
+              "RelativeToolTip": "Clist_array\\Clist_array.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-28T15:06:50.959Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
