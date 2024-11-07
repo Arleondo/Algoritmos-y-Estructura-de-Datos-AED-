@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Algoritmos-y-Estructura-de-Datos-AED-\\Tarea_Pila_sabado\\",
+  "WorkspaceRootPath": "D:\\Algoritmos y Estructura de Datos(AED)\\Tarea_Pila_sabado\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3C9BFD26-1589-44FC-8B44-EBDA14E65121}|Tarea_Pila_sabado\\Tarea_Pila_sabado.vcxproj|D:\\Algoritmos-y-Estructura-de-Datos-AED-\\Tarea_Pila_sabado\\Tarea_Pila_sabado\\Tarea_Pila_sabado.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{3C9BFD26-1589-44FC-8B44-EBDA14E65121}|Tarea_Pila_sabado\\Tarea_Pila_sabado.vcxproj|D:\\Algoritmos y Estructura de Datos(AED)\\Tarea_Pila_sabado\\Tarea_Pila_sabado\\Tarea_Pila_sabado.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{3C9BFD26-1589-44FC-8B44-EBDA14E65121}|Tarea_Pila_sabado\\Tarea_Pila_sabado.vcxproj|solutionrelative:Tarea_Pila_sabado\\Tarea_Pila_sabado.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Tarea_Pila_sabado.cpp",
-              "DocumentMoniker": "D:\\Algoritmos-y-Estructura-de-Datos-AED-\\Tarea_Pila_sabado\\Tarea_Pila_sabado\\Tarea_Pila_sabado.cpp",
+              "DocumentMoniker": "D:\\Algoritmos y Estructura de Datos(AED)\\Tarea_Pila_sabado\\Tarea_Pila_sabado\\Tarea_Pila_sabado.cpp",
               "RelativeDocumentMoniker": "Tarea_Pila_sabado\\Tarea_Pila_sabado.cpp",
-              "ToolTip": "D:\\Algoritmos-y-Estructura-de-Datos-AED-\\Tarea_Pila_sabado\\Tarea_Pila_sabado\\Tarea_Pila_sabado.cpp",
+              "ToolTip": "D:\\Algoritmos y Estructura de Datos(AED)\\Tarea_Pila_sabado\\Tarea_Pila_sabado\\Tarea_Pila_sabado.cpp",
               "RelativeToolTip": "Tarea_Pila_sabado\\Tarea_Pila_sabado.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowEEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-05T02:53:10.711Z",
               "EditorCaption": ""

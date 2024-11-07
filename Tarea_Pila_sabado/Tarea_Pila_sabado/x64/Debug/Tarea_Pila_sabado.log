@@ -1,3 +1,4 @@
 ﻿  Tarea_Pila_sabado.cpp
-D:\Algoritmos-y-Estructura-de-Datos-AED-\Tarea_Pila_sabado\Tarea_Pila_sabado\Tarea_Pila_sabado.cpp(1,13): warning C4081: se esperaba 'newline'; se encontró ';'
-  Tarea_Pila_sabado.vcxproj -> D:\Algoritmos-y-Estructura-de-Datos-AED-\Tarea_Pila_sabado\x64\Debug\Tarea_Pila_sabado.exe
+D:\Algoritmos y Estructura de Datos(AED)\Tarea_Pila_sabado\Tarea_Pila_sabado\Tarea_Pila_sabado.cpp(1,13): warning C4081: se esperaba 'newline'; se encontró ';'
+  LINK : no se encontró D:\Algoritmos y Estructura de Datos(AED)\Tarea_Pila_sabado\x64\Debug\Tarea_Pila_sabado.exe o no lo generó el último vínculo incremental; ejecutando vínculo completo
+  Tarea_Pila_sabado.vcxproj -> D:\Algoritmos y Estructura de Datos(AED)\Tarea_Pila_sabado\x64\Debug\Tarea_Pila_sabado.exe

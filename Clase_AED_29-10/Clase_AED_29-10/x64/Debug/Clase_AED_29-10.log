@@ -1,0 +1,15 @@
+﻿  Clase_AED_29-10.cpp
+D:\Algoritmos y Estructura de Datos(AED)\Clase_AED_29-10\Clase_AED_29-10\Clase_AED_29-10.cpp(1,13): warning C4081: se esperaba 'newline'; se encontró ';'
+D:\Algoritmos y Estructura de Datos(AED)\Clase_AED_29-10\Clase_AED_29-10\Clase_AED_29-10.cpp(9,21): error C2059: error de sintaxis: 'constante'
+      D:\Algoritmos y Estructura de Datos(AED)\Clase_AED_29-10\Clase_AED_29-10\Clase_AED_29-10.cpp(9,21):
+      el contexto de creación de instancias de la plantilla (el más antiguo primero) es
+          D:\Algoritmos y Estructura de Datos(AED)\Clase_AED_29-10\Clase_AED_29-10\Clase_AED_29-10.cpp(8,7):
+          al compilar la plantilla de clase 'Heap'
+  
+D:\Algoritmos y Estructura de Datos(AED)\Clase_AED_29-10\Clase_AED_29-10\Clase_AED_29-10.cpp(16,5): error C3646: 'T': especificador de invalidación desconocido
+D:\Algoritmos y Estructura de Datos(AED)\Clase_AED_29-10\Clase_AED_29-10\Clase_AED_29-10.cpp(16,7): error C3646: 'pop': especificador de invalidación desconocido
+D:\Algoritmos y Estructura de Datos(AED)\Clase_AED_29-10\Clase_AED_29-10\Clase_AED_29-10.cpp(13,10): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+D:\Algoritmos y Estructura de Datos(AED)\Clase_AED_29-10\Clase_AED_29-10\Clase_AED_29-10.cpp(13,10): error C2059: error de sintaxis: '('
+D:\Algoritmos y Estructura de Datos(AED)\Clase_AED_29-10\Clase_AED_29-10\Clase_AED_29-10.cpp(16,10): error C2059: error de sintaxis: '('
+D:\Algoritmos y Estructura de Datos(AED)\Clase_AED_29-10\Clase_AED_29-10\Clase_AED_29-10.cpp(17,1): error C2143: error de sintaxis: falta ')' delante de ';'
+D:\Algoritmos y Estructura de Datos(AED)\Clase_AED_29-10\Clase_AED_29-10\Clase_AED_29-10.cpp(17,1): error C2143: error de sintaxis: falta ';' delante de ')'

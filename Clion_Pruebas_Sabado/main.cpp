@@ -1,183 +1,143 @@
 #include <iostream>
-
 using namespace std;
 
-template <class T>
-struct nodo {
-    T** Array= new T * [5];
-    nodo<T>* next;
-    T** Fin= nullptr;
-    nodo(nodo<T>* n = nullptr) {next = n;}
+template<class T>
+struct Nodo {
+    int Tam;
+    T* Array;
+    Nodo<T>* Next;
+    Nodo() {Tam = 0; Array = new T[5]; Next = nullptr;}
 };
 
-template <class T, class U>
-struct LE {
-    U op;
-    nodo<T>* head = nullptr;
-    nodo<T>* tail = nullptr;
+template<class T>
+class List_array {
 
-    void add(T v);
-    void del(T v);
-    bool find(nodo<T>*& Node_pos ,T**& Array_pos, T v);
-    void print();
-};
+    Nodo<T>* Head;
 
-template<class T, class U>
-void LE<T, U>::print() {
-    cout << "Head" << "->";
-    for (nodo<T>* it = head; it; it = it->next) {
-        cout << "[ ";
-        for (T** it_2 = it->Array; it_2 != &it->Array[4] && it_2<=it->Fin ; ++it_2) {
-            cout << **it_2 << " , ";
+    bool find(Nodo<T>**& nodo_pos, int& Elementos, T Valor) {
+
+        for (nodo_pos = &Head; *nodo_pos;) {
+            if (*((*nodo_pos)->Array + (*nodo_pos)->Tam - 1) < Valor && (*nodo_pos)->Tam == 5) {
+                nodo_pos = &((*nodo_pos)->Next);}
+            else {
+                Elementos = 0;
+                for (T* Arraypos = (*nodo_pos)->Array; Arraypos < (*nodo_pos)->Array + (*nodo_pos)->Tam; Arraypos++, Elementos++) {
+                    if (*Arraypos > Valor) {
+                        return false;
+                    }
+                    else if (*Arraypos == Valor) {
+                        return true;
+                    }
+                }
+                return false;
+            }
         }
-        cout << " ]->";
+        return false;
     }
-    cout << "nullptr " << endl;
-}
+public:
+    List_array() {Head = nullptr;}
 
-template<class T, class U>
-bool LE<T, U>::find(nodo<T>*& Node_pos ,T**& Array_pos, T v) {
-    Node_pos = head;
-    for (;Node_pos<=tail && Node_pos ;Node_pos = Node_pos->next) {
-        for (Array_pos = Node_pos->Array; Array_pos<=Node_pos->Fin && !(op(v,**Array_pos)) ;Array_pos++) {
-            if (op(v, **Array_pos) || **Array_pos == v) {
+    void Add(T Valor) {
+        Nodo<T>** Nodo_pos = nullptr;
+        int Posicion = 0;
+
+        if (find(Nodo_pos, Posicion, Valor)) {
+            return;
+        }
+
+        while (true) {
+            if (!(*Nodo_pos)) {
+                (*Nodo_pos) = new Nodo<T>;
+                *((*Nodo_pos)->Array) = Valor;
+                (*Nodo_pos)->Tam += 1;
+                return;
+            }
+
+            T Temp;
+
+            for (T* Arr_pos = ((*Nodo_pos)->Array + Posicion); Arr_pos < (*Nodo_pos)->Array + (*Nodo_pos)->Tam; Arr_pos++) {
+                Temp = *Arr_pos; *Arr_pos = Valor; Valor = Temp;
+            }
+
+            (*Nodo_pos)->Tam += 1;
+
+            if ((*Nodo_pos)->Tam < 6) {
+                *((*Nodo_pos)->Array + (*Nodo_pos)->Tam - 1) = Valor;
+                return;}
+
+            else {
+                (*Nodo_pos)->Tam = 5;
+                Posicion = 0;
+                Nodo_pos = &((*Nodo_pos)->Next);}
+
+        }
+
+    }
+
+    bool Del(T Valor){
+        Nodo<T>** Nodo_act = nullptr;
+        int Pos_Arr = 0;
+
+        if (!(find(Nodo_act, Pos_Arr, Valor))) {
+            return false;
+        }
+
+        while (*Nodo_act) {
+
+            if ((*Nodo_act)->Tam == 1) {
+                ((*Nodo_act)->Array) = NULL;
+                delete (*Nodo_act)->Next;
                 return true;
             }
-            if (Array_pos++){ continue;}
-            else{break;}
-        }
-        if (Node_pos->next){ continue;}
-        else {return false;}
-    }
-    return false;
-}
-template<class T, class U>
-void LE<T, U>::del(T v) {
-    nodo<T>* Nodo_actual = nullptr; T** Array_actual = nullptr;
+            *((*Nodo_act)->Array + Pos_Arr) = NULL;
 
-
-    if (find(Nodo_actual, Array_actual, v) && **Array_actual == v) {
-        T temp_dato= **(tail->Fin);
-        delete *Array_actual; ++Array_actual;
-
-        for (;Nodo_actual<=tail;Nodo_actual=Nodo_actual->next) {
-
-            for (T ** Prev= Array_actual-- ;Array_actual<=Nodo_actual->Fin ; Array_actual++){
-                swap (*Array_actual, *Prev);
+            T* Pos_act = ((*Nodo_act)->Array + Pos_Arr);
+            for (; Pos_act < ((*Nodo_act)->Array + (*Nodo_act)->Tam); Pos_act++) {
+                T temporal = *(Pos_act + 1);
+                *Pos_act = temporal;
             }
-
-            if (Nodo_actual->Fin==Nodo_actual->Array+4) {
-                if (Nodo_actual->next) {
-                    Array_actual = Nodo_actual->next->Array;
-                    swap(*(Nodo_actual->Fin),*Array_actual);
-                }
+            Pos_act--;
+            if ((*Nodo_act)->Tam == 5 && (*Nodo_act)->Next) {
+                T temp = *((*Nodo_act)->Next->Array);
+                *Pos_act = temp;
+            } else if(!(*Nodo_act)->Next){
+                (*Nodo_act)->Tam--;
+                return true;
             }
-
-            if (Nodo_actual==tail) {
-                if (Nodo_actual->Fin != Nodo_actual->Array) {
-                    --(Nodo_actual->Fin); return;
-                }
-                if (find (Nodo_actual,Array_actual,temp_dato)) {
-                    delete[] Nodo_actual->next; Nodo_actual->next = nullptr;
-                    return;
-                }
-                delete [] head;
-            }
+            Nodo_act = &((*Nodo_act)->Next);
+            Pos_act=(*Nodo_act)->Array;
+            Pos_Arr = 0;
         }
     }
-}
 
-template<class T, class U>
-void LE<T, U>::add(T v) {
-    T * Valor= new T;
-    *Valor= v;
-    if (head==nullptr) {
-        head = new nodo<T>;
-        head->Array[0] = Valor;
-        tail = head;
-        tail->Fin = head->Array;
-        return;
-    }
-
-    nodo<T>* Nodo_actual = nullptr; T** Array_actual = nullptr;
-
-    if (find (Nodo_actual, Array_actual, v) && **Array_actual == v) {return;}
-
-    T* Temp_dato= *Array_actual;
-    *Array_actual = Valor;
-    if (Array_actual>Nodo_actual->Fin){
-        Nodo_actual->Fin=Array_actual;
-        return;}
-
-    if (Array_actual < (Nodo_actual->Array)+4) {
-        ++Array_actual;
-    } else if (Nodo_actual->next) {
-        Array_actual = Nodo_actual->next->Array; Nodo_actual=Nodo_actual->next;}
-    else {
-        Nodo_actual->next = new nodo<T>; tail= Nodo_actual->next;
-        Array_actual = Nodo_actual->next->Array;
-    }
-
-    for (;Nodo_actual<=tail && Nodo_actual ;Nodo_actual=Nodo_actual->next) {
-
-        for (;Array_actual<=Nodo_actual->Fin;Array_actual++) {
-            swap(*Array_actual, Temp_dato);
-        }
-
-
-        if (Nodo_actual->Fin==Nodo_actual->Array+4) {
-            if (Nodo_actual->next) {
-                Array_actual = Nodo_actual->next->Array;
-                continue;
+    void print(){
+        cout << "Head->";
+        for (auto *Nodo_p=Head;Nodo_p;Nodo_p=Nodo_p->Next){
+            cout << "[ ";
+            for (T*Elemento=Nodo_p->Array; Elemento < Nodo_p->Array+Nodo_p->Tam ;Elemento++){
+                cout <<*Elemento<<" ";
             }
-            Nodo_actual->next = new nodo<T>; tail= Nodo_actual->next;
-            Array_actual = Nodo_actual->next->Array;
+            cout << "]->";
         }
-
+        cout << "nullptr" << endl;
     }
-    T** Array_actual2 = nullptr;
-    if (find (Nodo_actual,Array_actual2,v)) {
-        swap(*Array_actual,Temp_dato);
-        Nodo_actual->Fin=Array_actual;
-    }
-}
 
-
-template<class T>
-class Asc {
-public:
-    bool operator()(T a, T b) {
-        return a < b;
-    }
 };
 
-template<class T>
-class Desc {
-public:
-    bool operator()(T a, T b) {
-        return a > b;
-    }
-};
 
-int main() {
-    LE <int, Asc<int>> Lista;
 
-    Lista.print();
-    Lista.add(1);
-    Lista.add(2);
-    Lista.add(3);
-    Lista.add(4);
-    Lista.add(5);
-    Lista.print();
-    Lista.add(6);
-    Lista.add(7);
-    Lista.add(8);
-    Lista.add(9);
-    Lista.print();
-    Lista.del(2);
-    Lista.del(4);
-    Lista.del(6);
-    Lista.del(8);
-    Lista.print();
-
+int main(){
+    List_array<int> Waza;
+    Waza.Add(1);
+    Waza.Add(2);
+    Waza.Add(3);
+    Waza.Add(4);
+    Waza.Add(5);
+    Waza.print();
+    Waza.Add(6);
+    Waza.Add(7);
+    Waza.Add(8);
+    Waza.print();
+    Waza.Del(3);
+    Waza.print();
 }

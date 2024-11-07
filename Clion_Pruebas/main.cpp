@@ -72,22 +72,17 @@ void CDeque::Colapsar_A(int**& Ptr_Mapa,int*& Ptr_Array) {
 }
 
 void CDeque::push_front(const int valor) {
-    if (In_Arr==Fin_Arr) {
-        *In_Arr++=valor;
-        Num_Elementos++;
-    }
-    else if(In_Arr==*In_Mapa && In_Arr!=*Mapa) {
-        In_Mapa--;
+
+    if(In_Arr==*In_Mapa && In_Arr!=*Mapa){
+        if (In_Arr==*Mapa) Expandir_M();
+        In_Mapa--; Num_Arrays++;
         Expandir_A(In_Mapa,In_Arr);
-        Num_Arrays++;
         In_Arr += Tam_Array-1;
         *In_Arr=valor;
-        Num_Elementos++;
+        Num_Elementos++; return;
     }
-    else if(In_Arr==*In_Mapa && In_Arr==*Mapa) {
-
-    }
-
+    
+    *In_Arr=valor; In_Arr--; Num_Elementos++;
 }
 
 void CDeque::push_back(int valor) {

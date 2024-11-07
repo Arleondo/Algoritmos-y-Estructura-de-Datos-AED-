@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Algoritmos y Estructura de Datos(AED)\\Clase_AED_29-10\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6F13B20E-9CF5-4FAB-A1E7-6F24340ECDB1}|Clase_AED_29-10\\Clase_AED_29-10.vcxproj|D:\\Algoritmos y Estructura de Datos(AED)\\Clase_AED_29-10\\Clase_AED_29-10\\Clase_AED_29-10.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6F13B20E-9CF5-4FAB-A1E7-6F24340ECDB1}|Clase_AED_29-10\\Clase_AED_29-10.vcxproj|solutionrelative:Clase_AED_29-10\\Clase_AED_29-10.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Clase_AED_29-10.cpp",
+              "DocumentMoniker": "D:\\Algoritmos y Estructura de Datos(AED)\\Clase_AED_29-10\\Clase_AED_29-10\\Clase_AED_29-10.cpp",
+              "RelativeDocumentMoniker": "Clase_AED_29-10\\Clase_AED_29-10.cpp",
+              "ToolTip": "D:\\Algoritmos y Estructura de Datos(AED)\\Clase_AED_29-10\\Clase_AED_29-10\\Clase_AED_29-10.cpp",
+              "RelativeToolTip": "Clase_AED_29-10\\Clase_AED_29-10.cpp",
+              "ViewState": "AgIAABQAAAAAAAAAAAAowCYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-29T20:36:41.768Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

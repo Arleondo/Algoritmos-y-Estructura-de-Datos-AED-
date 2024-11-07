@@ -18,21 +18,21 @@ public:
 	pila() {};
 
 	void push(T valor) {
-		nodo<T>* aux = Top;
-		Top = new nodo<T>(valor, aux);
-	};
+		Top = new nodo<T>(valor, Top);
+	}
 
 	bool pop(T& valor) {
 
 		if (Top != nullptr) {
 			nodo<T>* aux = Top;
+			valor = aux->valor;
 			Top = Top->next;
 			delete aux;
 			return true;
 		}
 
 		return false;
-	};
+	}
 
 	void print() {
 		cout << "Top->";
@@ -40,12 +40,11 @@ public:
 			cout << print->valor << "->";
 		}
 		cout << "nullprt" << endl;
-	};
-
+	}
 };
 
 int main() {
-	int a = 1;
+	int a;
 	pila <int> Pila_enteros;
 	Pila_enteros.print();
 	Pila_enteros.push(1);
