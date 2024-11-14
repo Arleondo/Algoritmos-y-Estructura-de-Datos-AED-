@@ -9,7 +9,6 @@ include_directories(headers /usr/include c:SFML/include)
 
 # Especifica la ruta a SFML
 set(SFML_DIR "C:/SFML-2.6.1/lib/cmake/SFML")
-set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake_modules")
 
 # Encuentra las librerías de SFML
 find_package(SFML 2.6.1 COMPONENTS system window graphics network audio REQUIRED)

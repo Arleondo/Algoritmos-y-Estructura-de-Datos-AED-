@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Algoritmos y Estructura de Datos(AED)\TAREASFML\cmake-build-release-sfml\CMakeFiles\31a41ed10b2fa369fcc399920dc8a1b4\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{8E3AA852-2EFE-3442-A636-1F3F5C68A29C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
