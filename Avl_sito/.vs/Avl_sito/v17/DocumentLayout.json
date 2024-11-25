@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Algoritmos y Estructura de Datos(AED)\\Avl_sito\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7E632255-9E93-4F98-B31B-1C965813C6F9}|Avl_sito\\Avl_sito.vcxproj|D:\\Algoritmos y Estructura de Datos(AED)\\Avl_sito\\Avl_sito\\Avl_sito.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7E632255-9E93-4F98-B31B-1C965813C6F9}|Avl_sito\\Avl_sito.vcxproj|solutionrelative:Avl_sito\\Avl_sito.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Avl_sito.cpp",
+              "DocumentMoniker": "D:\\Algoritmos y Estructura de Datos(AED)\\Avl_sito\\Avl_sito\\Avl_sito.cpp",
+              "RelativeDocumentMoniker": "Avl_sito\\Avl_sito.cpp",
+              "ToolTip": "D:\\Algoritmos y Estructura de Datos(AED)\\Avl_sito\\Avl_sito\\Avl_sito.cpp",
+              "RelativeToolTip": "Avl_sito\\Avl_sito.cpp",
+              "ViewState": "AgIAAN0AAAAAAAAAAAAowPAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-23T14:37:11.164Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

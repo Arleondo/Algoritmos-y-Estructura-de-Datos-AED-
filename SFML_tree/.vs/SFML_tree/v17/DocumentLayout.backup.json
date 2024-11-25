@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Algoritmos y Estructura de Datos(AED)\\SFML_tree\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DBA4E9E9-9BA2-45C8-A1A3-4E7416B6123B}|SFML_tree\\SFML_tree.vcxproj|D:\\Algoritmos y Estructura de Datos(AED)\\SFML_tree\\SFML_tree\\SFML_tree.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DBA4E9E9-9BA2-45C8-A1A3-4E7416B6123B}|SFML_tree\\SFML_tree.vcxproj|solutionrelative:SFML_tree\\SFML_tree.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SFML_tree.cpp",
+              "DocumentMoniker": "D:\\Algoritmos y Estructura de Datos(AED)\\SFML_tree\\SFML_tree\\SFML_tree.cpp",
+              "RelativeDocumentMoniker": "SFML_tree\\SFML_tree.cpp",
+              "ToolTip": "D:\\Algoritmos y Estructura de Datos(AED)\\SFML_tree\\SFML_tree\\SFML_tree.cpp*",
+              "RelativeToolTip": "SFML_tree\\SFML_tree.cpp*",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAGcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-23T14:02:05.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

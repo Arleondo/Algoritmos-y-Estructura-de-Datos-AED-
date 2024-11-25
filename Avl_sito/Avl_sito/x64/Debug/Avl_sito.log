@@ -1,0 +1,9 @@
+﻿  Avl_sito.cpp
+D:\Algoritmos y Estructura de Datos(AED)\Avl_sito\Avl_sito\Avl_sito.cpp(65,16): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+D:\Algoritmos y Estructura de Datos(AED)\Avl_sito\Avl_sito\Avl_sito.cpp(181,19): warning C4244: 'inicializando': conversión de 'double' a 'int'; posible pérdida de datos
+D:\Algoritmos y Estructura de Datos(AED)\Avl_sito\Avl_sito\Avl_sito.cpp(188,49): warning C4244: '=': conversión de 'double' a '_Ty'; posible pérdida de datos
+D:\Algoritmos y Estructura de Datos(AED)\Avl_sito\Avl_sito\Avl_sito.cpp(188,49): warning C4244:         with
+D:\Algoritmos y Estructura de Datos(AED)\Avl_sito\Avl_sito\Avl_sito.cpp(188,49): warning C4244:         [
+D:\Algoritmos y Estructura de Datos(AED)\Avl_sito\Avl_sito\Avl_sito.cpp(188,49): warning C4244:             _Ty=int
+D:\Algoritmos y Estructura de Datos(AED)\Avl_sito\Avl_sito\Avl_sito.cpp(188,49): warning C4244:         ]
+  Avl_sito.vcxproj -> D:\Algoritmos y Estructura de Datos(AED)\Avl_sito\x64\Debug\Avl_sito.exe
